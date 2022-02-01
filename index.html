@@ -1,521 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <title>Grayscale City</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Mixtape template project">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
-    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
-    <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
-    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+  <title>Grayscale City Media</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+
+
+     <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- Material Kit CSS -->
+  <link href="assets/css/material-kit.css?v=3.0.0" rel="stylesheet" />
 </head>
 
 <body>
+  <!-- Navbar Transparent -->
+  <nav class="navbar navbar-expand-lg position-absolute top-0 z-index-3 w-100 shadow-none my-3 navbar-transparent">
+    <div class="container">
+      <a class="navbar-brand  text-white " href="https://grayscalecity.github.io" rel="tooltip"
+        title="Grayscale City Media" data-placement="bottom" target="_blank">
+        Grayscale City Media
+      </a>
+      <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mt-2">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0 ms-lg-12 ps-lg-5" id="navigation">
+        <ul class="navbar-nav navbar-nav-hover ms-auto">
+          <li class="nav-item dropdown dropdown-hover mx-2 ms-lg-6">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuPages2"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons opacity-6 me-2 text-md">dashboard</i>
+              Pages
+              <img src="./assets/img/down-arrow-white.svg" alt="down-arrow"
+                class="arrow ms-auto ms-md-2 d-lg-block d-none">
+              <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow"
+                class="arrow ms-auto ms-md-2 d-lg-none d-block">
+            </a>
 
-    <div class="super_container">
+          </li>
 
-        <!-- Header -->
-        <header class="header">
-            <div class="header_content d-flex flex-row align-items-center justify-content-center">
-                <div class="logo"><a href="#">Grayscale City
-			</a></div>
-                <nav class="main_nav">
-                    <ul class="d-flex flex-row align-items-start justify-content-start">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="music.html">Music</a></li>
-                        <li><a href="blog.html">News</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="hamburger ml-auto">
-                    <div class="d-flex flex-column align-items-end justify-content-between">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-            </div>
-        </header>
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuBlocks"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons opacity-6 me-2 text-md">view_day</i>
+              Sections
+              <img src="./assets/img/down-arrow-white.svg" alt="down-arrow"
+                class="arrow ms-auto ms-md-2 d-lg-block d-none">
+              <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow"
+                class="arrow ms-auto ms-md-2 d-lg-none d-block">
+            </a>
+          </li>
 
-        <!-- Menu -->
-
-        <div class="menu">
-            <div>
-                <div class="menu_overlay"></div>
-                <div class="menu_container d-flex flex-column align-items-start justify-content-center">
-                    <nav class="menu_nav">
-                        <ul class="d-flex flex-column align-items-start justify-content-start">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="music.html">Music</a></li>
-                            <li><a href="blog.html">News</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-
-        <!-- Home -->
-
-        <div class="home">
-            <div class="home_slider_container">
-
-                <!-- Home Slider -->
-                <div class="owl-carousel owl-theme home_slider">
-
-                    <!-- Slide -->
-                    <div class="owl-item">
-                        <div class="background_image" style="background-image:url(images/index.jpg)"></div>
-                        <div class="home_container">
-                            <div class="home_container_inner d-flex flex-column align-items-center justify-content-center">
-                                <div class="home_content text-center">
-                                    <div class="home_subtitle">New single release</div>
-                                    <div class="home_title">
-                                        <h1>Love is all around</h1>
-                                    </div>
-                                    <div class="home_link"><a href="https://soundcloud.com/grayscalecity">Listen on Soundcloud</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide -->
-                    <div class="owl-item">
-                        <div class="background_image" style="background-image:url(images/index.jpg)"></div>
-                        <div class="home_container">
-                            <div class="home_container_inner d-flex flex-column align-items-center justify-content-center">
-                                <div class="home_content text-center">
-                                    <div class="home_subtitle">New single release</div>
-                                    <div class="home_title">
-                                        <h1>Love is all around</h1>
-                                    </div>
-                                    <div class="home_link"><a href="https://soundcloud.com/grayscalecity">Listen on Soundcloud</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Slide -->
-                    <div class="owl-item">
-                        <div class="background_image" style="background-image:url(images/index.jpg)"></div>
-                        <div class="home_container">
-                            <div class="home_container_inner d-flex flex-column align-items-center justify-content-center">
-                                <div class="home_content text-center">
-                                    <div class="home_subtitle">New single release</div>
-                                    <div class="home_title">
-                                        <h1>Love is all around</h1>
-                                    </div>
-                                    <div class="home_link"><a href="https://soundcloud.com/grayscalecity">Listen on Soundcloud</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Featured Album -->
-
-        <div class="featured_album">
-            <div class="background_image featured_background" style="background-image:url(images/featured.png)"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-6">
-                        <div class="section_title_container">
-                            <div class="section_subtitle">Events</div>
-                            <div class="section_title">
-                                <h1>Featured Album</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row featured_row row-lg-eq-height">
-
-                    <!-- Featured Album Image -->
-                    <div class="col-md-6">
-                        <div class="featured_album_image">
-                            <div class="image_overlay"></div>
-                            <div class="background_image" style="background-image:url(images/featured_album.jpg)"></div>
-                            <!-- <img src="images/featured_album.jpg" alt=""> -->
-                        </div>
-                    </div>
-
-                    <!-- Featured Album Player -->
-                    <div class="col-md-6 featured_album_col">
-                        <div class="featured_album_player_container d-flex flex-column align-items-start justify-content-center">
-                            <div class="featured_album_player">
-                                <div class="featured_album_title_bar d-flex flex-row align-items-center justify-content-start">
-                                    <div class="featured_album_title_container">
-                                        <div class="featured_album_artist">Maria Smith</div>
-                                        <div class="featured_album_title">Love is all Around</div>
-                                    </div>
-                                    <div class="featured_album_link ml-auto"><a href="https://soundcloud.com/grayscalecity">Catch it on Soundcloud</a></div>
-                                </div>
-                                <div id="jplayer_1" class="jp-jplayer"></div>
-                                <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
-                                    <div class="jp-type-playlist">
-                                        <div class="jp-playlist">
-                                            <ul>
-                                                <li></li>
-                                            </ul>
-                                        </div>
-                                        <div class="player_details d-flex flex-row align-items-center justify-content-start">
-                                            <div class="jp-details">
-                                                <div>playing</div>
-                                                <div class="jp-title" aria-label="title">&nbsp;</div>
-                                            </div>
-                                            <div class="jp-controls-holder ml-auto">
-                                                <button class="jp-play" tabindex="0"></button>
-                                            </div>
-                                        </div>
-                                        <div class="player_controls">
-                                            <div class="jp-gui jp-interface d-flex flex-row align-items-center justify-content-start">
-                                                <div class="jp-controls-holder time_controls d-flex flex-row align-items-center justify-content-start">
-                                                    <div>
-                                                        <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
-                                                    </div>
-                                                    <div class="jp-progress">
-                                                        <div class="jp-seek-bar">
-                                                            <div class="jp-play-bar"></div>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div class="jp-duration ml-auto" role="timer" aria-label="duration">&nbsp;</div>
-                                                    </div>
-                                                </div>
-                                                <div class="jp-volume-controls d-flex flex-row align-items-center justify-content-start ml-auto">
-                                                    <button class="jp-mute" tabindex="0"></button>
-                                                    <div class="jp-volume-bar">
-                                                        <div class="jp-volume-bar-value"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="jp-no-solution">
-                                            <span>Update Required</span> To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Shows -->
-
-        <div class="shows">
-            <div class="container">
-                <div class="row" style="z-index:10;">
-                    <div class="col">
-                        <div class="section_title_container">
-                            <div class="section_subtitle">Events</div>
-                            <div class="section_title">
-                                <h1>Upcoming Shows</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row shows_row">
-
-                    <!-- Shows List -->
-                    <div class="col-lg-8 order-lg-1 order-2 shows_list_col">
-                        <div class="shows_list_container">
-                            <ul class="shows_list">
-
-                                <!-- Show -->
-                                <li class="d-flex flex-row align-items-center justify-content-start">
-                                    <div>
-                                        <div class="show_date">18/07</div>
-                                    </div>
-                                    <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                        <div class="show_name"><a href="#">Electric Castle Festival</a></div>
-                                        <div class="show_location">Cluj, Romania</div>
-                                    </div>
-                                    <div class="ml-auto">
-                                        <div class="show_shop trans_200"><a href="#">Buy Tickets</a></div>
-                                    </div>
-                                </li>
-
-                                <!-- Show -->
-                                <li class="d-flex flex-row align-items-center justify-content-start">
-                                    <div>
-                                        <div class="show_date">20/07</div>
-                                    </div>
-                                    <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                        <div class="show_name"><a href="#">Ultra Music Festival</a></div>
-                                        <div class="show_location">Miami, USA</div>
-                                    </div>
-                                    <div class="ml-auto">
-                                        <div class="show_shop trans_200"><a href="#">Buy Tickets</a></div>
-                                    </div>
-                                </li>
-
-                                <!-- Show -->
-                                <li class="d-flex flex-row align-items-center justify-content-start">
-                                    <div>
-                                        <div class="show_date">03/08</div>
-                                    </div>
-                                    <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                        <div class="show_name"><a href="#">Untold Festival</a></div>
-                                        <div class="show_location">Cluj, Romania</div>
-                                    </div>
-                                    <div class="ml-auto">
-                                        <div class="show_shop trans_200"><a href="#">Buy Tickets</a></div>
-                                    </div>
-                                </li>
-
-                                <!-- Show -->
-                                <li class="d-flex flex-row align-items-center justify-content-start">
-                                    <div>
-                                        <div class="show_date">11/08</div>
-                                    </div>
-                                    <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                        <div class="show_name"><a href="#">Sun Kissed Festival</a></div>
-                                        <div class="show_location">Paris, France</div>
-                                    </div>
-                                    <div class="ml-auto">
-                                        <div class="show_shop trans_200"><a href="#">Buy Tickets</a></div>
-                                    </div>
-                                </li>
-
-                                <!-- Show -->
-                                <li class="d-flex flex-row align-items-center justify-content-start">
-                                    <div>
-                                        <div class="show_date">18/08</div>
-                                    </div>
-                                    <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                        <div class="show_name"><a href="#">Spanish Festival</a></div>
-                                        <div class="show_location">Madrid, Spain</div>
-                                    </div>
-                                    <div class="ml-auto">
-                                        <div class="show_shop trans_200"><a href="#">Buy Tickets</a></div>
-                                    </div>
-                                </li>
-
-                                <!-- Show -->
-                                <li class="d-flex flex-row align-items-center justify-content-start">
-                                    <div>
-                                        <div class="show_date">25/08</div>
-                                    </div>
-                                    <div class="show_info d-flex flex-md-row flex-column align-items-md-center align-items-start justify-content-md-start justify-content-center">
-                                        <div class="show_name"><a href="#">Vikings Festival</a></div>
-                                        <div class="show_location">Oslo, Norway</div>
-                                    </div>
-                                    <div class="ml-auto">
-                                        <div class="show_shop trans_200"><a href="#">Buy Tickets</a></div>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Shows Image -->
-                    <div class="col-lg-4 order-lg-2 order-1">
-                        <div class="shows_image">
-                            <div class="image_overlay"></div>
-                            <img src="images/shows.jpg" alt="https://unsplash.com/@anthonydelanoix">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Artist -->
-
-        <div class="artist">
-            <div class="container">
-                <div class="row">
-
-                    <!-- Artist Image -->
-                    <div class="col-lg-4 artist_image_col">
-                        <div class="artist_image">
-                            <img src="images/artist.png" alt="">
-                        </div>
-                    </div>
-
-                    <!-- Artist Content -->
-                    <div class="col-lg-7 offset-lg-1">
-                        <div class="artist_content">
-                            <div class="section_title_container">
-                                <div class="section_subtitle">Events</div>
-                                <div class="section_title">
-                                    <h1>The Artist</h1>
-                                </div>
-                            </div>
-                            <div class="artist_text">
-                                <p> In vitae nisi aliquam, scelerisque leo a, volutpat sem. Vivamus rutrum dui fermentum eros hendrerit, id lobortis leo volutpat. Maecenas sollicitudin est in libero pretium interdum. Nullam volutpat dui sem, ac congue purus
-                                    luctus nec. Curabitur luctus luctus erat, sit amet facilisis quam congue quis. Quisque ornare luctus erat id dignissim. Nullam ac nunc quis ex porttitor luctus.</p>
-                                <p>Integer sed facilisis eros. In iaculis rhoncus velit in malesuada. In hac habitasse platea dictumst. Fusce erat ex, consectetur sit amet ornare suscipit, porta et erat. Donec nec nisi in nibh commodo laoreet. Mauris dapibus
-                                    justo ut feugiat malesuada. Fusce ultricies ante tortor, non vestibulum est feugiat ut.</p>
-                            </div>
-                            <div class="artist_sig"><img src="images/sig.png" alt=""></div>
-                            <div class="single_player_container d-flex flex-column align-items-start justify-content-center">
-                                <div class="single_player">
-                                    <div id="jplayer_2" class="jp-jplayer"></div>
-                                    <div id="jp_container_2" class="jp-audio" role="application" aria-label="media player">
-                                        <div class="jp-type-single">
-                                            <div class="player_details d-flex flex-row align-items-center justify-content-start">
-                                                <div class="jp-details">
-                                                    <div>playing</div>
-                                                    <div class="jp-title" aria-label="title">&nbsp;</div>
-                                                </div>
-                                                <div class="jp-controls-holder ml-auto">
-                                                    <button class="jp-play" tabindex="0"></button>
-                                                </div>
-                                            </div>
-                                            <div class="player_controls">
-                                                <div class="jp-gui jp-interface d-flex flex-row align-items-center justify-content-start">
-                                                    <div class="jp-controls-holder time_controls d-flex flex-row align-items-center justify-content-start">
-                                                        <div>
-                                                            <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
-                                                        </div>
-                                                        <div class="jp-progress">
-                                                            <div class="jp-seek-bar">
-                                                                <div class="jp-play-bar"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            <div class="jp-duration ml-auto" role="timer" aria-label="duration">&nbsp;</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="jp-volume-controls d-flex flex-row align-items-center justify-content-start ml-auto">
-                                                        <button class="jp-mute" tabindex="0"></button>
-                                                        <div class="jp-volume-bar">
-                                                            <div class="jp-volume-bar-value"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="jp-no-solution">
-                                                <span>Update Required</span> To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- Extra -->
-
-        <div class="extra">
-            <div class="extra_container">
-                <div class="background_image" style="background-image:url(images/extra.jpg)"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-9">
-                            <div class="extra_content d-flex flex-column align-items-start justify-content-center">
-                                <div class="extra_title">
-                                    <h1>Get your tickets now!</h1>
-                                </div>
-                                <div class="extra_text">
-                                    <p>In vitae nisi aliquam, scelerisque leo a, volutpat sem. Vivamus rutrum dui fermentum eros hendrerit, id lobortis leo volutpat. Maecenas sollicitudin est in libero pretium interdum</p>
-                                </div>
-                                <div class="extra_button"><a href="#">Buy Now</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-
-        <footer class="footer">
-            <div class="footer_container d-flex flex-xl-row flex-column align-items-start justify-content-start">
-                <div class="newsletter_container">
-                    <div class="newsletter_title">
-                        <h2>Subscribe to our newsletter</h2>
-                    </div>
-                    <form action="#" id="newsletter_form" class="newsletter_form">
-                        <input type="email" class="newsletter_input" placeholder="Your E-mail" required="required">
-                        <button class="newsletter_button">Subscribe</button>
-                    </form>
-                </div>
-                <div class="footer_lists d-flex flex-sm-row  flex-column align-items-start justify-content-start ml-xl-auto">
-
-                    <!-- Useful Links -->
-                    <div class="footer_list">
-                        <div class="footer_list_title">Useful Links</div>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                            <li><a href="#">Music</a></li>
-                            <li><a href="blog.html">News</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Mixtape -->
-                    <div class="footer_list">
-                        <div class="footer_list_title">Mixtape</div>
-                        <ul>
-                            <li><a href="#">Music</a></li>
-                            <li><a href="#">PR & Marketing</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Testimonials</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Connect -->
-                    <div class="footer_list">
-                        <div class="footer_list_title">Connect</div>
-                        <ul>
-                            <li><a href="#">Returns</a></li>
-                            <li><a href="#">Shippings</a></li>
-                            <li><a href="#">Jobs</a></li>
-                            <li><a href="#">Social Media</a></li>
-                            <li><a href="#">Soundcloud</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-            <div class="copyright_bar">
-                <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</span>
-            </div>
-        </footer>
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" id="dropdownMenuDocs"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons opacity-6 me-2 text-md">article</i>
+              Docs
+              <img src="./assets/img/down-arrow-white.svg" alt="down-arrow"
+                class="arrow ms-auto ms-md-2 d-lg-block d-none">
+              <img src="./assets/img/down-arrow-dark.svg" alt="down-arrow"
+                class="arrow ms-auto ms-md-2 d-lg-none d-block">
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+  <!-- End Navbar -->
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="styles/bootstrap-4.1.2/popper.js"></script>
-    <script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
-    <script src="plugins/greensock/TweenMax.min.js"></script>
-    <script src="plugins/greensock/TimelineMax.min.js"></script>
-    <script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
-    <script src="plugins/greensock/animation.gsap.min.js"></script>
-    <script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-    <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
-    <script src="plugins/easing/easing.js"></script>
-    <script src="plugins/progressbar/progressbar.min.js"></script>
-    <script src="plugins/parallax-js-master/parallax.min.js"></script>
-    <script src="plugins/jPlayer/jquery.jplayer.min.js"></script>
-    <script src="plugins/jPlayer/jplayer.playlist.min.js"></script>
-    <script src="js/custom.js"></script>
+
+  <div class="page-header min-vh-80"
+    style="background-image: url('https://images.unsplash.com/photo-1529854140025-25995121f16f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')">
+    <span class="mask bg-gradient-dark opacity-6"></span>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="text-center">
+            <h1 class="text-white">Grayscale City</h1>
+            <p class="lead text-white">A place to find all the passion projects of Grayscale City Media</p>
+            <h4 class="text-white">"The heavens declare the glory of God"</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card card-body shadow-xl mx-3 mx-md-4 mt-n6">
+    <div class="container">
+      <div class="section text-center">
+        <h2 class="title">Music</h2>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/421533621&color=%234ca4a4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div
+          style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+          <a href="https://soundcloud.com/n00dlesandcake" title="N00dlesAndCake" target="_blank"
+            style="color: #cccccc; text-decoration: none;">N00dlesAndCake</a> · <a
+            href="https://soundcloud.com/n00dlesandcake/summer-vibes" title="Summer Vibes" target="_blank"
+            style="color: #cccccc; text-decoration: none;">Summer Vibes</a></div>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/862847770%3Fsecret_token%3Ds-Dt2NjsY5Pga&color=%234ca4a4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div
+          style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+          <a href="https://soundcloud.com/grayscalecity" title="Grayscale City" target="_blank"
+            style="color: #cccccc; text-decoration: none;">Grayscale City</a> · <a
+            href="https://soundcloud.com/grayscalecity/wip-1/s-Dt2NjsY5Pga" title="WIP" target="_blank"
+            style="color: #cccccc; text-decoration: none;">WIP</a></div>
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/348847265&color=%234ca4a4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <div
+          style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+          <a href="https://soundcloud.com/redemptionformany" title="Redemption For Many" target="_blank"
+            style="color: #cccccc; text-decoration: none;">Redemption For Many</a> · <a
+            href="https://soundcloud.com/redemptionformany/frozen-h2o" title="Frozen H2O" target="_blank"
+            style="color: #cccccc; text-decoration: none;">Frozen H2O</a></div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer pt-5 mt-5">
+    <div class="container">
+      <div class=" row">
+        <div class="col-md-3 mb-4 ms-auto">
+          <div>
+            <a href="https://www.creative-tim.com/product/material-kit">
+              <img src="./assets/img/logos/glasses.png" class="mb-3 footer-logo"  alt="main_logo">
+            </a>
+            <h6 class="font-weight-bolder mb-4">Grayscale City Media</h6>
+          </div>
+          <div>
+            <ul class="d-flex flex-row ms-n3 nav">
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://www.facebook.com/GrayscaleCity" target="_blank">
+                  <i class="fab fa-facebook text-lg opacity-8"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://twitter.com/GrayscaleCity" target="_blank">
+                  <i class="fab fa-twitter text-lg opacity-8"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-1" href="https://www.youtube.com/channel/UCGxCE79LHE2M7mXarnUd4Qw"
+                  target="_blank">
+                  <i class="fab fa-youtube text-lg opacity-8"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+          <div>
+            <h6 class="text-sm">Company</h6>
+            <ul class="flex-column ms-n3 nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank">
+                  About Us
+                </a>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+          <div>
+            <h6 class="text-sm">Resources</h6>
+
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4">
+          <div>
+            <h6 class="text-sm">Help & Support</h6>
+            <ul class="flex-column ms-n3 nav">
+              <li class="nav-item">
+                <a class="nav-link" href="mailto:grayscalecity@gmail.com" target="_blank">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-6 col-6 mb-4 me-auto">
+          <div>
+            <h6 class="text-sm">Legal</h6>
+            <ul class="flex-column ms-n3 nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  target="_blank">
+                  Terms of Service
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="text-center">
+            <p class="text-dark my-4 text-sm font-weight-normal">
+              All rights reserved. Copyright © <script>
+                document.write(new Date().getFullYear())
+              </script><a href="https://grayscalecity.github.io" target="_blank"></a> Grayscale City Media</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
